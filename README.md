@@ -1,3 +1,20 @@
+# TinyLink
+
+This is a Next.js + Tailwind CSS project. Key improvements and fixes applied:
+- Added tsconfig.json for TypeScript integration.
+- Added Tailwind + PostCSS configs and corrected global.css import.
+- Created package.json with dev and build scripts.
+- Removed next-env.d.ts from .gitignore (should be committed).
+- Replaced hard-coded secret in .env with placeholder. Do not commit real credentials; use .env.local instead.
+
+Quick start:
+1. Create a local .env.local with DATABASE_URL and NEXT_PUBLIC_BASE_URL values.
+2. npm install
+3. npm run dev
+
+Security:
+- Do not commit credentials (postgres url) to git. Add a `.env.example` with placeholders if you need to share sample variables.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
